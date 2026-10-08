@@ -15,5 +15,9 @@ hexo.extend.filter.register('after_render:html', function (html) {
       return '<script src="' + escapeAttribute(music.meting_js) + '"></script>';
     });
   }
+  if (!html.includes('id="eating-music-style"')) {
+    const stylesheet = escapeAttribute(this.config.root + 'css/music-custom.css');
+    html = html.replace('</head>', '<link id="eating-music-style" rel="stylesheet" href="' + stylesheet + '">\n</head>');
+  }
   return html;
 }, 10);

@@ -1,0 +1,18 @@
+/* Smaller lyrics for Eating's music page. */
+#music-page .aplayer .aplayer-lrc {
+  width: calc(100% - 480px);
+}
+
+#music-page .aplayer .aplayer-lrc p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.8 !important;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+#music-page .aplayer .aplayer-lrc p.aplayer-lrc-current {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.8 !important;
+}
