@@ -47,3 +47,7 @@ icp_license:
 cclicense:
   enable: false
 
+
+# Public Meting service used by the QQ playlist on the music page.
+music:
+  meting_api: 'https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r'

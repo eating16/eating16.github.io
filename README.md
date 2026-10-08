@@ -54,7 +54,7 @@ npm.cmd run server
 Eating 的主题配置位于 `_config.hexo-theme-nemophila.yml`。如需更换角色、头像或加载图片，编辑该配置文件即可。
 `scripts/nemophila-config.js` 只清理被设为 null 的作者示例联系项和菜单项，不修改主题模板。
 
-已接入搜索、RSS、关于、音乐、友链占位和 404 页面。音乐页预置的是主题自带的示例音频，可在 `source/music/index.md` 中替换或删除。
+已接入搜索、RSS、关于、音乐、友链占位和 404 页面。音乐页通过主题内置的 MetingJS 接入 QQ 音乐歌单（ID：9790291638），在 `source/music/index.md` 中更换歌单 ID 即可；歌曲播放依赖 Meting 接口，当前使用 injahow 的公共服务。
 评论服务当前关闭，动态保留原版静态文案；启用云端服务前需要配置自己的服务地址。
 
 获取主题文件（例如普通克隆未带子模块时）：
@@ -64,3 +64,7 @@ git submodule update --init --recursive
 ```
 
 `source/friends/index.md` 使用原版通用页面布局；尚未连接评论后端。
+
+音乐接口配置位于主题配置的 music.meting_api；scripts/nemophila-music.js 为音乐页加入该地址，不修改官方主题模板。
+
+接入测试时歌单共 16 首，QQ 匿名播放接口仅为 4 首返回音频地址：24/7, 365、Welcome to Wonderland、七月上、アイロニ。其余歌曲可显示曲目信息，但暂无法通过该接口播放；可使用普通音频文件和 aplayer 模式替换。

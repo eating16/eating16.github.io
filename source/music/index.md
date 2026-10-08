@@ -1,12 +1,8 @@
 ---
 title: 音乐
 layout: music
-player_type: aplayer
-audio_list:
-  - name: Remember
-    artist: ''
-    url: /assets/Remember.flac
-    cover: /images/music_cover_test.jpg
-    lrc: /assets/Remember.lrc
+player_type: metingjs
+server: tencent
+meting_type: playlist
+meting_id: '9790291638'
 ---
-
