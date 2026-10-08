@@ -8,6 +8,7 @@ subtitle: ''
 description: ''
 keywords:
 author: Eating
+nickname: Eating
 language: zh-CN
 timezone: Asia/Shanghai
 
@@ -96,10 +97,79 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: hexo-theme-nemophila
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
 
+
+# Nemophila: official search index configuration
+jsonContent:
+  meta: true
+  drafts: false
+  file: content.json
+  dateFormat: 'YYYY-MM-DD'
+  pages:
+    title: true
+    slug: true
+    date: true
+    updated: true
+    comments: true
+    path: true
+    link: true
+    permalink: true
+    excerpt: true
+    keywords: false
+    text: true
+    raw: false
+    content: false
+    author: true
+    cover: true
+  posts:
+    title: true
+    slug: true
+    date: true
+    updated: true
+    comments: true
+    path: true
+    link: true
+    permalink: true
+    excerpt: true
+    keywords: false
+    text: true
+    raw: false
+    content: false
+    author: true
+    categories: true
+    tags: true
+    cover: true
+
+# Nemophila: official Markdown and RSS settings
+markdown_it_plus:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - plugin:
+        name: markdown-it-katex
+        enable: true
+    - plugin:
+        name: markdown-it-mark
+        enable: true
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 0
+  content: true
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: ico/Nemo.svg
+  autodiscovery: true

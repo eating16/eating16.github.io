@@ -1,0 +1,3 @@
+[submodule "themes/hexo-theme-nemophila"]
+	path = themes/hexo-theme-nemophila
+	url = https://github.com/imouup/hexo-theme-nemophila.git

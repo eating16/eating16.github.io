@@ -1,0 +1,49 @@
+# Eating site settings. The upstream theme remains unchanged.
+title: Eating
+
+menu:
+  首页:
+    path: /
+    icon: ico/navbar/home.svg
+    submenu: false
+  归档:
+    path: /archives/
+    icon: ico/navbar/archive.svg
+    submenu: false
+  Lists:
+    submenu:
+      番组: null
+      书架: null
+  Project:
+    submenu:
+      Nemophila:
+        path: https://github.com/imouup/hexo-theme-nemophila
+        type: link
+
+contact:
+  Github:
+    uid: eating16
+    path: https://github.com/eating16
+    icon: /ico/contact/github.svg
+  Twitter: null
+  Bilibili: null
+  Email: null
+
+# Retain the original avatar, mascot, loading artwork, and other assets.
+# A blank API keeps the original static quote without loading the demo feed.
+tweet:
+  enable: true
+  api: ''
+
+waline:
+  enable: false
+  serverURL: ''
+
+icp_license:
+  icp_license_link: ''
+  text: ''
+
+# Do not assign a new license to existing blog articles during installation.
+cclicense:
+  enable: false
+
