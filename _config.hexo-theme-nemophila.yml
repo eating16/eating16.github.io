@@ -52,3 +52,6 @@ cclicense:
 music:
   meting_api: 'https://meting-api-omega.vercel.app/api?server=:server&type=:type&id=:id&r=:r'
   meting_js: 'https://cdn.jsdelivr.net/npm/@xizeyoupan/meting@2.0.7/dist/Meting.min.js'
+
+aboutme:
+  avatar: images/avatar-eating.jpg
