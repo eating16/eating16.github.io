@@ -73,4 +73,4 @@ git submodule update --init --recursive
 
 联系方式在主题配置的 contact 中维护：GitHub 为 eating16，Bilibili 主页为 https://space.bilibili.com/521418272，邮箱链接为 mailto:yitingwang164@gmail.com；使用主题原有图标和布局。
 
-返回顶部使用 source/images/top.webp；加载占位图使用 source/images/run-loading.svg，它内嵌用户提供的静态 run.webp，以 CSS 循环起伏和三条渐进加载条保留跑动效果。加载图通过 lazyload.loading_img 配置，实际图片加载完成后由原主题脚本自动替换。
+返回顶部使用 source/images/top.webp；加载占位图使用 source/images/run-loading.svg，它内嵌用户提供的静态 run.webp，角色保持静止，三条渐进加载条以 3 秒周期依次填充。加载图通过 lazyload.loading_img 配置，实际图片加载完成后由原主题脚本自动替换。

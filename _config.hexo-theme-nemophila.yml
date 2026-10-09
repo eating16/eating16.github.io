@@ -42,7 +42,7 @@ rss:
 back_to_top_img: images/top.webp
 lazyload:
   enable: true
-  loading_img: /images/run-loading.svg
+  loading_img: /images/run-loading.svg?v=2
 
 # A blank API keeps the original static quote without loading the demo feed.
 tweet:
