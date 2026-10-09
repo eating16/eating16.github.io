@@ -38,7 +38,12 @@ contact:
 rss:
   enable: false
 
-# Retain the original avatar, mascot, loading artwork, and other assets.
+# Custom back-to-top and image-loading artwork.
+back_to_top_img: images/top.webp
+lazyload:
+  enable: true
+  loading_img: /images/run-loading.svg
+
 # A blank API keeps the original static quote without loading the demo feed.
 tweet:
   enable: true

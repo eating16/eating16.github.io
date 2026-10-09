@@ -72,3 +72,5 @@ git submodule update --init --recursive
 音乐页的自定义歌词样式位于 source/css/music-custom.css，目前普通歌词 20px、高亮歌词 26px，行高 1.8，歌词区域按右侧栏宽度排列并允许长句换行；音乐页辅助脚本会加载该样式。
 
 联系方式在主题配置的 contact 中维护：GitHub 为 eating16，Bilibili 主页为 https://space.bilibili.com/521418272，邮箱链接为 mailto:yitingwang164@gmail.com；使用主题原有图标和布局。
+
+返回顶部使用 source/images/top.webp；加载占位图使用 source/images/run-loading.svg，它内嵌用户提供的静态 run.webp，以 CSS 循环起伏和三条渐进加载条保留跑动效果。加载图通过 lazyload.loading_img 配置，实际图片加载完成后由原主题脚本自动替换。
