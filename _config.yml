@@ -164,6 +164,7 @@ markdown_it_plus:
         enable: true
 
 feed:
+  enable: false
   type: atom
   path: atom.xml
   limit: 0
@@ -172,4 +173,4 @@ feed:
   content_limit_delim: ' '
   order_by: -date
   icon: ico/Nemo.svg
-  autodiscovery: true
+  autodiscovery: false

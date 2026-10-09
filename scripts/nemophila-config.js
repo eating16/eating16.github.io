@@ -14,3 +14,10 @@ hexo.extend.filter.register('before_generate', function () {
   }
 }, 1);
 
+// The upstream navigation always renders RSS; remove it when disabled.
+hexo.extend.filter.register('after_render:html', function (html) {
+  if (this.config.theme !== 'hexo-theme-nemophila' ||
+      !this.theme.config.rss || this.theme.config.rss.enable !== false ||
+      typeof html !== 'string') return html;
+  return html.replace(/<a\b[^>]*\bclass="[^"]*\bnavlink-rss\b[^"]*"[^>]*>[\s\S]*?<\/a>\s*/g, '');
+}, 10);
